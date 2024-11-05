@@ -1,11 +1,18 @@
-export default function Header() {
+// Definition of the HeaderProps interface that specifies the types of the properties received by the Header component. This avoids the use of the 'any' type, improving type safety and code readability.
+interface HeaderProps {
+  title: string;
+  caption: string;
+}
+
+export default function Header(props: HeaderProps) {
   return (
     <div
       className={`
-    flex justify-center items-center h-36
-  bg-purple-500 text-3xl rounded-lg`}
+    flex flex-col justify-center items-center h-36
+  bg-purple-500 rounded-lg`}
     >
-      Header
+      <h1 className="text-3xl font-black">{props.title}</h1>
+      <h2>{props.caption}</h2>
     </div>
   );
 }
