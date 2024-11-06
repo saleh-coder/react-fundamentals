@@ -5,6 +5,7 @@ interface HeaderProps {
 }
 
 export default function Header(props: HeaderProps) {
+  console.log(props);
   return (
     <div
       className={`
