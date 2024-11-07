@@ -11,7 +11,10 @@ export default function Page() {
     <div className={` flex flex-col h-screen p-5 gap-5 bg-black text-white `}>
       <Header title="My page" caption="I'm on the pages page!" />
       <Content />
-      <Footer />
+      <Footer
+        leftText="Made with ❤️ by saleh-coder"
+        rightText={`Developed in ${new Date().getFullYear().toString()}`}
+      />
     </div>
   );
 }
