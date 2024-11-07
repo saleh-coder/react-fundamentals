@@ -7,7 +7,7 @@ export default function Content(props: any) {
       bg-emerald-500
       text-3xl rounded-lg`}
     >
-      Content
+      {props.children}
     </h1>
   );
 }

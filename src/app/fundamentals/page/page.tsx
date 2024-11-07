@@ -7,7 +7,14 @@ export default function Page() {
   return (
     <div className={`flex flex-col gap-4 p-4 h-screen `}>
       <Header title="My page" caption="I'm on the pages page!" />
-      <Content />
+      <Content>
+        <ul className="list-disc">
+          <li>list 1</li>
+          <li>list 2</li>
+          <li>list 3</li>
+          <li>list 4</li>
+        </ul>
+      </Content>
       <Footer
         leftText="Made with ❤️ by saleh-coder"
         rightText={`Developed in ${new Date().getFullYear().toString()}`}
