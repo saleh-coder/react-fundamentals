@@ -7,7 +7,10 @@ export default function Page() {
     <div className={`flex flex-col gap-4 p-4 h-screen`}>
       <Header title="My application" caption="Best app on the web!" />
       <Content />
-      <Footer />
+      <Footer
+        leftText="Made with ❤️ by saleh-coder"
+        rightText={`Developed in ${new Date().getFullYear().toString()}`}
+      />
     </div>
   );
 }
