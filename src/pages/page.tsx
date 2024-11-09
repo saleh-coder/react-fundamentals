@@ -11,10 +11,13 @@ export default function Page() {
   return (
     <div className={` flex flex-col h-screen p-5 gap-5 bg-black text-white `}>
       <Header title="My page" caption="I'm on the pages page!" />
-      <Menu />
-      <Content>
-        <button className="bg-blue-500 p-2 rounded-md">test</button>
-      </Content>
+      <div className="flex flex-1 gap-5">
+        <Menu />
+        <Content>
+          <button className="bg-blue-500 p-2 rounded-md">test</button>
+        </Content>
+      </div>
+
       <Footer
         leftText="Made with ❤️ by saleh-coder"
         rightText={`Developed in ${new Date().getFullYear().toString()}`}
