@@ -9,8 +9,8 @@ export default function Menu() {
     
     `}
     >
-      <MenuItem text="Page #1" />
-      <MenuItem text="Page #2" />
+      <MenuItem text="Page #1" url="/fundamentals/page" />
+      <MenuItem text="Page #2" url="/page" />
     </div>
   );
 }
