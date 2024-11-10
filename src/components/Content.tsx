@@ -3,7 +3,7 @@ export default function Content(props: any) {
   console.log(props);
   return (
     <h1
-      className={`flex justify-center items-center flex-1
+      className={`flex items-start flex-1 p-4
       bg-emerald-500
       text-3xl rounded-lg`}
     >
