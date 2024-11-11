@@ -1,4 +1,4 @@
-import Pagina from "@/components/Pagina";
+import Pagina from "@/components/Page";
 import "../../globals.css";
 
 export default function Page() {
