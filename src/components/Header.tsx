@@ -2,6 +2,7 @@
 interface HeaderProps {
   title: string;
   caption: string;
+  className?: string; // Optional className property
 }
 
 export default function Header(props: HeaderProps) {
@@ -9,8 +10,8 @@ export default function Header(props: HeaderProps) {
   return (
     <div
       className={`
-    flex flex-col justify-center items-center h-24
-  bg-purple-500 rounded-lg `}
+    flex flex-col justify-center items-center
+  bg-purple-500 rounded-lg  ${props.className ?? ""}`}
     >
       <h1 className="text-3xl font-black">{props.title}</h1>
       <h2>{props.caption}</h2>
