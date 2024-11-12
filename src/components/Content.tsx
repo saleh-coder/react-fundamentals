@@ -1,5 +1,8 @@
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export default function Content(props: any) {
+interface ContentProps {
+  children: any;
+}
+
+export default function Content(props: ContentProps) {
   console.log(props);
   return (
     <h1
