@@ -9,8 +9,8 @@ export default function Header(props: HeaderProps) {
   return (
     <div
       className={`
-    flex flex-col justify-center items-center h-36
-  bg-purple-500 rounded-lg`}
+    flex flex-col justify-center items-center h-24
+  bg-purple-500 rounded-lg `}
     >
       <h1 className="text-3xl font-black">{props.title}</h1>
       <h2>{props.caption}</h2>

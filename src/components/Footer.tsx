@@ -10,7 +10,7 @@ export default function Footer({ leftText, rightText }: FooterProps) {
     <div
       className={`
         flex justify-between items-center
-        h-36 rounded-lg text-xl px-10
+        h-16 rounded-lg text-xl px-10 
         bg-cyan-600
     `}
     >
