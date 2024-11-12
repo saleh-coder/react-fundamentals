@@ -5,6 +5,7 @@ import Link from "next/link";
 interface MenuItemProps {
   text: string; // Text to display in the menu item
   url: string; // URL to navigate to when the menu item is clicked
+  icon: any;
 }
 
 // The MenuItem component renders a link styled as a menu button
@@ -12,9 +13,10 @@ export default function MenuItem(props: MenuItemProps) {
   return (
     <Link
       href={props.url}
-      className={`px-4 py-2 bg-zinc-900 text-xl w-full rounded-md`}
+      className={`flex items-center gap-4 px-4 py-2 text-base w-full rounded-md hover:bg-zinc-900`}
     >
-      {props.text} {/* Displaying the text passed as a prop */}
+      <span>{props.icon}</span>
+      <span>{props.text}</span>
     </Link>
   );
 }
