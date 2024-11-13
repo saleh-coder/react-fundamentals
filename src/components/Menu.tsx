@@ -18,7 +18,11 @@ export default function Menu() {
     `}
     >
       <span className="text-sm text-zinc-500 pl-3 pt-4">State</span>
-      <MenuItem icon={<IconCode />} text="Stateless Component" url="/" />
+      <MenuItem
+        icon={<IconCode />}
+        text="Stateless Component"
+        url="/state/stateless"
+      />
 
       <span className="text-sm text-zinc-500 pl-3 pt-4">Fundamentals</span>
       <MenuItem

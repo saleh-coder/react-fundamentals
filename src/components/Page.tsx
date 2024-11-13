@@ -3,7 +3,13 @@ import Footer from "./Footer";
 import Header from "./Header";
 import SideArea from "./SideArea";
 
-export default function Page(props: any) {
+interface PageProps {
+  title: string;
+  caption: string;
+  children: any;
+}
+
+export default function Page(props: PageProps) {
   return (
     <div className={`flex h-screen`}>
       <SideArea />
