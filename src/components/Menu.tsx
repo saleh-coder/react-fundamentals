@@ -13,8 +13,8 @@ export default function Menu() {
   return (
     <div
       className={`
-    flex flex-col justify-start w-72
-    text-3lx p-2 gap-2
+     flex flex-col justify-start w-72
+     text-3lx p-2 gap-2
     `}
     >
       <span className="text-sm text-zinc-500 pl-3 pt-4">State</span>
@@ -22,6 +22,11 @@ export default function Menu() {
         icon={<IconCode />}
         text="Stateless Component"
         url="/state/stateless"
+      />
+      <MenuItem
+        icon={<IconCode />}
+        text="Stateful Component"
+        url="/state/stateful"
       />
 
       <span className="text-sm text-zinc-500 pl-3 pt-4">Fundamentals</span>
