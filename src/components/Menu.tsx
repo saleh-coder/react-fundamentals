@@ -5,6 +5,7 @@ import {
   IconFileCheck,
   IconFunction,
   IconH1,
+  IconNumbers,
   IconSitemap,
 } from "@tabler/icons-react";
 import MenuItem from "./MenuItem";
@@ -28,6 +29,8 @@ export default function Menu() {
         text="Stateful Component"
         url="/state/stateful"
       />
+
+      <MenuItem icon={<IconNumbers />} text="Couter" url="/state/counter" />
 
       <span className="text-sm text-zinc-500 pl-3 pt-4">Fundamentals</span>
       <MenuItem

@@ -8,6 +8,10 @@ export default function StatefulPage() {
   function increase() {
     setNumber(number + 1);
   }
+
+  function decrease() {
+    setNumber(number - 1);
+  }
   return (
     <Page title="Stateful Page" caption="Chapter State">
       <div className="flex flex-col">
@@ -16,7 +20,7 @@ export default function StatefulPage() {
           <span>{number}</span>
         </div>
         <button onClick={increase} className="bg-blue-500 p-2 rounded-lg">
-          Increase
+          increase
         </button>
       </div>
     </Page>
