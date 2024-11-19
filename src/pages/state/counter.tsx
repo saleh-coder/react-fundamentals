@@ -1,5 +1,4 @@
 import Page from "@/components/Page";
-import "../../app/globals.css";
 import { useState } from "react";
 import { IconMinus, IconPlus } from "@tabler/icons-react";
 
