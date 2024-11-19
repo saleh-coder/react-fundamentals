@@ -8,7 +8,7 @@ export default function TestPage() {
 
   return (
     <Page title="My App" caption="I'm on the pages page!">
-      <button onClick={execute} className="bg-blue-500 p-2 rounded-md">
+      <button onClick={execute} className="button">
         test
       </button>
     </Page>
