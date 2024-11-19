@@ -3,6 +3,7 @@ import {
   IconBrandJavascript,
   IconCode,
   IconFileCheck,
+  IconForms,
   IconFunction,
   IconH1,
   IconNumbers,
@@ -31,6 +32,12 @@ export default function Menu() {
       />
 
       <MenuItem icon={<IconNumbers />} text="Couter" url="/state/counter" />
+
+      <MenuItem
+        icon={<IconForms />}
+        text="Input Text Demo"
+        url="/state/InputTextPage"
+      />
 
       <span className="text-sm text-zinc-500 pl-3 pt-4">Fundamentals</span>
       <MenuItem
