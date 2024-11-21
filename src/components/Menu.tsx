@@ -1,6 +1,7 @@
 import {
   IconBraces,
   IconBrandJavascript,
+  IconCalculator,
   IconCode,
   IconFileCheck,
   IconForms,
@@ -37,6 +38,12 @@ export default function Menu() {
         icon={<IconForms />}
         text="Input Text Demo"
         url="/state/InputTextPage"
+      />
+
+      <MenuItem
+        icon={<IconCalculator />}
+        text="Calculater"
+        url="/state/InputCalc"
       />
 
       <span className="text-sm text-zinc-500 pl-3 pt-4">Fundamentals</span>
