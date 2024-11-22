@@ -1,5 +1,6 @@
 import {
   IconArrowDownSquare,
+  IconArrowUpSquare,
   IconBraces,
   IconBrandJavascript,
   IconCalculator,
@@ -27,6 +28,12 @@ export default function Menu() {
         icon={<IconArrowDownSquare />}
         text="Direct Communication"
         url="/communication/direct"
+      />
+
+      <MenuItem
+        icon={<IconArrowUpSquare />}
+        text="Indirect Communication"
+        url="/communication/indirect"
       />
 
       <span className="text-sm text-zinc-500 pl-3 pt-4">State</span>
